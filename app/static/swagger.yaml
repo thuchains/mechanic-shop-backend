@@ -5,7 +5,7 @@ info:
   description: "Used to manage the everyday functionalities of a mechanic shop"
   version: "0.0.1"
 
-host: "https://mechanic-shop-db-model-2.onrender.com" #During development my API is served on my local host (will change when we go to prod)
+host: "https://mechanic-shop-backend.onrender.com" #During development my API is served on my local host (will change when we go to prod)
 schemes:
   - "https"
 consumes:
