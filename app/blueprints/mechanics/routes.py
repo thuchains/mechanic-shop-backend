@@ -54,7 +54,7 @@ def create_mechanic():
 
 #View individual mechanic
 @mechanics_bp.route('/<int:mechanic_id>', methods=['GET'])
-@limiter.limit("10 per hour")
+@limiter.limit("1000 per hour")
 def read_mechanic(mechanic_id):
     mechanic = db.session.get(Mechanics, mechanic_id)
     return mechanic_schema.jsonify(mechanic), 200
