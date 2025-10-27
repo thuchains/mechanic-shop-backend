@@ -11,7 +11,7 @@ from app.blueprints.service_tickets.schemas import service_tickets_schema
 
 #Login
 @mechanics_bp.route('/login', methods=['POST'])
-@limiter.limit("50 per hour")
+@limiter.limit("5000 per hour")
 def login():
     try: 
         data = mechanic_login_schema.load(request.json)
